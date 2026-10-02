@@ -43,11 +43,37 @@ For each model: **units**, **dollar exposure** (units × entry), and either **ri
 
 Color coding: amber if risk is over 2% of account, red if over 5% or if Kelly returns a negative edge (your win rate × RR doesn't beat the alternative).
 
-## Use it
+## Use
 
 [https://0xelitesystem.github.io/position-sizing-calculator/](https://0xelitesystem.github.io/position-sizing-calculator/)
 
 Or open `index.html` locally.
+
+1. Enter account size, entry price, and stop loss price.
+2. Set risk per trade, win rate, avg win / avg loss ratio, Kelly fraction, ATR, and ATR multiplier.
+3. Read units, dollar exposure, and risk for each of the four models. Results update as you type, or press Calculate.
+4. Use Halve all risk % for a conservative pass, or Reset to start over.
+
+## Why this exists
+
+Comparing sizing models usually means a spreadsheet or a broker tool tied to your account. This is one HTML file that runs four models side by side in your browser, with no tracking, no account, and no network calls. MIT licensed.
+
+## Privacy
+
+Everything runs in your browser. Nothing you enter is sent anywhere or saved, and reloading resets every field. The only thing the page writes to your browser is your light or dark theme choice, saved in localStorage under the key `theme` when you press the theme button, so the page opens in the same theme next time. Clear site data to remove it.
+
+## Run locally
+
+```
+git clone https://github.com/0xelitesystem/position-sizing-calculator
+cd position-sizing-calculator
+```
+
+Then open `index.html` in any browser. Or serve the folder with `python -m http.server` and visit http://localhost:8000.
+
+## Build
+
+No build step. The whole tool is one file, `index.html`, with its CSS and JavaScript inline.
 
 ## Heavy disclaimer (read it)
 
@@ -68,7 +94,7 @@ Or open `index.html` locally.
 
 ## What's not included
 
-- No localStorage, no cookies, no tracking.
+- No localStorage for your inputs (only the theme choice, see Privacy), no cookies, no tracking.
 - No third-party scripts.
 - No paywall.
 
