@@ -1,8 +1,8 @@
-# position-sizing-calculator
+# position-size-risk-math
 
-![Position Sizing Calculator screenshot](screenshot.png)
+![Position Size Risk Math screenshot](screenshot.png)
 
-**Live demo:** https://0xelitesystem.github.io/position-sizing-calculator/
+**Live demo:** https://0xelitesystem.github.io/position-size-risk-math/
 
 > **Not financial advice.** This is a math calculator. It does no recommendations, no live data, no advice tailored to your situation. Position sizing without a tested edge is just slower losing. Pair this with your own backtested rules and a licensed advisor if you need one.
 
@@ -45,7 +45,7 @@ Color coding: amber if risk is over 2% of account, red if over 5% or if Kelly re
 
 ## Use
 
-[https://0xelitesystem.github.io/position-sizing-calculator/](https://0xelitesystem.github.io/position-sizing-calculator/)
+[https://0xelitesystem.github.io/position-size-risk-math/](https://0xelitesystem.github.io/position-size-risk-math/)
 
 Or open `index.html` locally.
 
@@ -65,8 +65,8 @@ Everything runs in your browser. Nothing you enter is sent anywhere or saved, an
 ## Run locally
 
 ```
-git clone https://github.com/0xelitesystem/position-sizing-calculator
-cd position-sizing-calculator
+git clone https://github.com/0xelitesystem/position-size-risk-math
+cd position-size-risk-math
 ```
 
 Then open `index.html` in any browser. Or serve the folder with `python -m http.server` and visit http://localhost:8000.
